@@ -8,7 +8,7 @@
         body{
             background-color: rgba(17, 17, 240, 0.76);
             color: white;
-            font: normal 16pt Arial;
+            font: normal 16pt Arial;/*comentario em CSS */
         }
         h1 {
             color: black;
@@ -16,12 +16,11 @@
     </style>
 </head>
 <body>
-    <h1>Olá, mundo! <hr></h1>
-    <p>Já me livrei da maldição </p>
+    <h1>Olá, mundo! </h1>
+    <p>Já me livrei da maldição </p><!-- comentario em HTML-->
     <script>
-        window.alert("Minha primeira menssagem");//vai abrir uma janela de alerta.
-        window.confirm("Está gostar de Js?"); //vai abrir uma janela para confirmar.
-        window.prompt("Qual é o seu nome?");//vai abrir uma janela com uma questão ou mua afirmação.
+        var nome = window.prompt("Qual é o seu nome?");//vai abrir uma janela com uma questão ou uma afirmação.
+        window.alert("É um grande praser te conhecer "+ nome + " !" );
     </script>
 </body>
 </html>
