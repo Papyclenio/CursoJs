@@ -17,11 +17,14 @@
     </style>
 </head>
 <body>
-    <div id="aria" onclick="clicar()" onmouseenter="entra()" onmouseout="sair()">
+    <div id="aria" >
         Interaja...
     </div>
     <script>
         var a = window.document.getElementById("aria");
+        a.addEventListener("click", clicar);
+        a.addEventListener("mouseenter", entra)
+        a.addEventListener("mouseout", sair)
         function clicar() {
             
             a.innerText = 'Clicou!'
@@ -29,10 +32,12 @@
         }
         function entra() {
             a.innerText = 'Entrou!'
+            a.style.color ="blue"
         }
         function sair() {
             a.innerText = 'saiu!'
             a.style.background ="green"
+            a.style.color = "white"
         }
 
     </script>
