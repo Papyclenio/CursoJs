@@ -22,3 +22,7 @@ footer{
     color: white;
     text-align: center;
 }
+div {
+    text-align: center;
+    padding: 8px;
+}
